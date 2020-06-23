@@ -1,0 +1,66 @@
+body{
+  box-sizing: border-box;
+  background-color: rgba(181, 181, 181, 0.32);
+}
+h2{
+  flex: 0 1 100%;
+  text-align: center;
+  font-size: 1.8rem;
+}
+h3{
+  font-family: "Libre Baskerville", serif;
+  margin: 0;
+  font-weight: 700;
+}
+.contenedor{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+img{
+  max-width: 100%;
+}
+
+.entrada{
+  margin-bottom: 1rem;
+}
+.contenido{
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 1rem;
+  text-align: center;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+.contenido span{
+  color:#db008b;
+}
+.contenido h3{
+  font-size: .9rem;
+  line-height: 1.4rem;
+}
+.boton{
+  background-color: rgba(0, 63, 226, 0.72);
+  color:white;
+  padding: .8rem 3rem;
+  margin-top: 1rem;
+  display: inline-block;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 480px) {
+  .contenido-principal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .entrada{
+    /*PARA QUE SE VALLA AL 50 LA BASE*/
+    flex: 0 1 calc(50% - 1rem);
+  }
+
+}
+@media screen and (min-width: 780px) {
+  .entrada{
+    /*PARA QUE SE VALLA AL 30 LA BASE y nos permita poner 3 filas*/
+    flex: 0 1 calc(33% - 1rem);
+}
+}
